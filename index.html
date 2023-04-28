@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <span id="mk"></span>
+    <!-- <div id="figure">
+            <i id="i1" class="fa-solid fa-chess-pawn"></i>
+    </div> -->
+    <script>
+        let figurs=[
+        '<i class="fa-solid fa-chess-king"></i>',
+'<i class="fa-solid fa-chess-pawn"></i>',
+'<i class="fa-solid fa-chess-bishop"></i>',
+'<i class="fa-solid fa-chess-knight"></i>',
+'<i class="fa-solid fa-chess-rook"></i>',
+'<i class="fa-regular fa-chess-king"></i>',
+'<i class="fa-regular fa-chess-queen"></i>',
+'<i class="fa-regular fa-chess-pawn"></i>',
+'<i class="fa-regular fa-chess-bishop"></i>',
+'<i class="fa-regular fa-chess-knight"></i>',
+'<i class="fa-regular fa-chess-rook"></i>'
+        ]
+        const mk = document.querySelector("#mk");
+        for(let i =0;i<figurs.length;i++){
+            mk.innerHTML=figurs[i];
+
+        }
+        // let a=1
+        let boxs = document.createElement("div")
+        boxs.classList.add("boxs")
+        for (let index = 0; index < 8; index++) {
+            for (let x = 0; x < 8; x++) {
+                let div = document.createElement("div")
+                div.classList.add("box1")
+                boxs.appendChild(div)
+            }
+            let br = document.createElement("br")
+            boxs.appendChild(br)
+        }
+        // for (let y = 0; y < 3; y++) {
+        //     let row=[]
+        //     for (let x = 0; x < 3; x++) {
+        //         row.push(a)
+        //         a++;
+
+        //     }
+        // }
+        // let figure = document.createElement("div")
+        // figure.classList.add("figure")
+        // for (let index = 0; index < 8; index++) {
+        //     let soldier = document.createElement("i")
+        //     soldier.classList.add("soldier");0
+        //     figure.appendChild(soldier)
+        // }
+        // boxs.appendChild(figure)
+            // for (let index = 0; index < 8; index++) {
+            //     let figure=document.querySelector("#figure")
+            //     let i1=document.querySelector("#i1")
+            //     figure.appendChild("#i1")
+            //     boxs.appendChild(figure)
+            // }
+
+        document.body.appendChild(boxs)
+    </script>
+
+<!-- <i class="fa-solid fa-chess-king"></i> -->
+
+</body>
+
+</html>

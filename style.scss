@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boxs{
+
+}
+.box1:nth-child(odd){
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+.box1:nth-child(even){
+    background-color: rgb(220, 220, 220);
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+i{
+    width: 60px;
+    height: 60px;
+}
+.figure{
+    display: flex;
+    flex-direction: column;
+}
